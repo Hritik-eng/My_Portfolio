@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+}
+.container2{
+    display: flex;
+}
+.sidebar{
+    display: none;
+    width:16vw;
+    height:100vh;
+    background-color:rgb(179, 170, 170);
+}
+
+.side{
+    background-color: red;
+}
+
+
+.main{
+    width:80vw;
+    height:100vh;
+    background-color:white;
+}
+nav{
+    position: absolute;
+    left:4px;
+   
+   
+}
+
+nav ul{
+    padding-top: 90px; 
+}
+
+nav ul li{
+    list-style-type:none;
+    font-size:2.5vw;
+    padding: 0.5em;
+    font-family:'Roboto', sans-serif;
+}
+
+.infoContainer{
+    display: flex;
+    justify-content: space-around;
+    width:85vw;
+    height:65vh;
+    margin:15vh auto;
+    margin-left: 5vw;
+    background-color:blueviolet;
+   
+    border-radius:4px;
+}
+
+img{
+    width:19vw;
+    height:65vh;
+    
+    border-radius: 10px;
+}
+
+.devInfo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.hello{
+  font-size:3.5vw; 
+}
+.name{
+    font-weight:bold;
+    font-size:2.5vw;
+}
+
+.about{
+font-size:2vw;
+}
+
+.buttons button{
+margin-top:15px;
+font-size:medium ;
+height:6vh;
+border-radius: 20px;
+color:rgb(23, 211, 211);
+}
+button:hover{
+    color:white;
+    background-color:blue;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.contactForm{
+    padding: 0 40px;
+    padding-top: 20px;
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mainContact{
+    width:50vw;
+    height:83vh;
+    margin:15px auto;
+    background-color: grey;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.contactForm  div{
+    padding: 7px 0;
+}
+
+#emailHelp{
+    font-size: 8 px;
+    color:midnightblue;
+    margin: 0 5px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    width:30vw;
+    border-radius: 6px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+.form-check{
+    display: flex;
+    flex-direction: row;    
+}
+
+.form-check input{
+    width:35px;  
+}
+
+.butt button{
+    color:white;
+    font-size: large;
+    width:8vw;
+    height:6vh;
+    border-radius: 6px;
+    background-color: rgb(136, 136, 245);
+}
+
+button:hover{
+    background-color: blue;
+}
+
+.intro{
+margin-left:6vw ;
+}
+
+.project h2{
+    color:red;
+}
+.project{
+margin-left:1.5vw ;
+width:87vw;
+}
+
+.intro p {
+   font-family:'Roboto', sans-serif;
+}
+
+.intro h2{
+    color:red;
+}
+
+
+#ul{
+    margin-left: -5px;
+    background-color: brown;
+    border: 2px solid black;
+}
+
+ul{
+    padding-left: 0px;
+}
+
+.hamburger{
+    display:block;
+    margin-top: 10px;
+    width:4vw;
+    height:3vh;
+   }
+.cross{
+    position: absolute;
+    right:0px;
+    margin-top: 10px;
+    padding-right:10px ;
+    width:2vw;
+    height:3vh;
+    filter: invert(1);
+   }
+
+
+   iframe{
+    width:70vw;
+    height:90vh;
+   }
+
+.iframe{
+    margin-left: 13vw;
+}
+.skillcontainer dd{
+    padding-top:6px;
+}
+
+.extra div{
+    padding-top:4px;
+    font-family:'Roboto', sans-serif;
+}
+
+.main2{
+    margin:1vw auto;
+    width:80vw;
+    height:100vh;
+    background-color: red;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.m1{
+    margin-top: 10px;
+    width:80vw;
+    display: flex;
+
+
+}
+.m2{
+    margin-top: 10px;
+    width:80vw;
+    display: flex;
+
+}
+.m3{
+    margin-top: 40px;
+    width:80vw;
+    display: flex;
+
+}
+
+.pro{
+    margin-top: -10px;
+     width: 87vw;
+}
+
+textarea{
+    border: 1px solid black;
+    border-radius:10px;
+}
+
+@media (max-width:800px)  {
+    .main{
+        background-color:white;
+    }
+    .infoContainer{
+        background-color:white;
+    }
+  .hamburger{
+    width:10vw;
+    height:6vh;
+  }
+  .butt button{
+    color:white;
+    font-size: large;
+    width:20vw;
+    height:6vh;
+    border-radius: 6px;
+    background-color: rgb(136, 136, 245);
+}
+.infoContainer{
+    width:70vw;
+    height:45vh;
+}
+img{
+    width:20vw;
+    height:45vh;
+   border-radius: 10px;
+}
+
+iframe{
+    width:70vw;
+    height:90vh;
+   }
+   body{
+    overflow: visible;
+   }
+
+   h3 a{
+    color:red;
+   }
+
+   .main2{
+    width:82vw;
+   }
+   
+   .card1{
+    width:11vw;
+    height:15vh; 
+}
+
+   .card2{
+    width:16vw;
+    height:15vh; 
+}
+
+   .card3{
+    width:20vw;
+    height:15vh; 
+}
+
+}
+
+@media (max-width:1200px){
+    .sidebar{
+        width:25vw;
+        height:100vh;
+        background-color:grey;
+    }
+    nav ul{
+        padding-top: 50px; 
+    }
+    .mainContact{
+        height:90vh;
+        width:60vw;
+    }
+    .contactForm  div{
+        padding: 0.5px 0;
+    }
+    div.card-title{
+        font-size: xx-small;
+    }
+    .m1{
+        margin-top: 20px;
+    
+    
+    }
+    .m2{
+        margin-top: 25px;
+    
+    }
+    .m3{
+        margin-top: 40px;
+    
+    }
+    .sidebar{
+        display: none;
+        width:16vw;
+        height:100vh;
+        background-color:rgb(179, 170, 170);
+    }
+}
+
+@media (max-width:400px){
+    
+    .mainContact{
+        width:70vw;
+        height:80vh;
+        margin:15px auto;
+        background-color: grey;
+        border: 3px solid black;
+        border-radius: 5px;
+    }
+}
+
+.card{
+    width:25vw;
+    height:25vh;
+    
+}
+
+.card:hover{
+    cursor:pointer;
+}
+
+.card-body{
+    height:6vh;
+    background-color:grey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+div.card-title{
+    margin-top:-10px;
+}
