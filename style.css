@@ -111,18 +111,28 @@ a{
 }
 
 .mainContact{
-    width:50vw;
-    height:83vh;
+    width:40vw;
+    height:75vh;
     margin:15px auto;
     background-color: grey;
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .contactForm  div{
     padding: 7px 0;
 }
-
+.sub{
+    display: flex;
+    align-items: center;
+}
+.submit{
+    width:8vw;
+    background-color: blue;
+}
+.submit:hover{
+    background-color: green;
+}
 #emailHelp{
     font-size: 8 px;
     color:midnightblue;
@@ -339,7 +349,7 @@ iframe{
         padding-top: 50px; 
     }
     .mainContact{
-        height:90vh;
+        height:50vh;
         width:60vw;
     }
     .contactForm  div{
@@ -373,11 +383,15 @@ iframe{
     
     .mainContact{
         width:70vw;
-        height:80vh;
+        height:50vh;
         margin:15px auto;
         background-color: grey;
         border: 3px solid black;
         border-radius: 5px;
+    }
+    .submit{
+        width:13vw;
+        background-color: blue;
     }
 }
 

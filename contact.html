@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
     <link 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"/>
-    <title>Contact</title>
+    <title>Contact Me</title>
+   <style>
+    .submit{
+      width:5vw;
+      left:10vw;
+    }
+    body{
+      background-color: crimson;
+    }
+   </style>
+
 </head>
 <body>
     <div class="container">
@@ -27,40 +37,60 @@
           
           </nav>
       </div>
-    <div class="mainContact">
-        <div class="contactForm">
-            <h1>Conatct me for work/general Enquiry</h1>
+<div class="mainContact">
+  <div class="contactForm">
+    <h1 align="center">Contact Form</h1>
+    <div>
+          <form  name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqdeaea" method="post">
+            <div class="mb-8">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="name" id="name" placeholder="First and Last" required="">
+              </div>
+                <div class="mb-8">
+              <label for="email-address" id="email">Email Address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@example.com" required="">
+              </div>
+              <div class="mb-8">
+              <label for="message">Message</label>
+              <textarea rows="5" name="message" id="enquiry" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+             </div>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              <div class="sub">
+            <input   class="submit" type="submit" value="Submit">
+          </div>
+          </form>
+    <!-- Form recieving using by backend  -->
+            <!-- <h1>Conatct me for work/general Enquiry</h1>
             <form onsubmit="sendEmail(); reset(); return false;">
                 <div class="mb-3">
-                    <label class="form-label">Name</label>
-                    <input id="name" type="text" class="form-control" >
+                    <label class="form-label">Full Name</label>
+                    <input id="name" name="name" type="text" class="form-control" >
 
                   </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input id="email" type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
             
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Phone</label>
-                  <input id="phone" type="tel" class="form-control" id="exampleInputPassword1">
+                  <input id="phone" type="tel" name="phone" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Enquiry</label>
-                    <textarea id="enquiry" type="text" rows="5" class="form-control" id="exampleInputPassword1"></textarea>
+                    <textarea id="enquiry" type="text" name="message" rows="5" class="form-control" id="exampleInputPassword1"></textarea>
                   </div>
                 
-                <div class="butt">
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+                      <input type="submit" value="Submit"/>
               
-              </form>
-        </div>
-    </div>
+              </form> -->
+              </div>
+              </div>
+</div>
 </div>
 <script src="script.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       function sendEmail() {
         Email.send({
@@ -86,7 +116,7 @@
                 +"<br/> Message: "+ document.getElementById("enquiry").value
         }).then((message) => alert("Message sent succesfully"));
       }
-    </script>
+    </script> -->
    
 </body>
 </html>
