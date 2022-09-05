@@ -350,7 +350,10 @@ iframe{
     }
     .mainContact{
         height:50vh;
-        width:60vw;
+        width:55vw;
+    }
+    .submit{
+        width:20vw;
     }
     .contactForm  div{
         padding: 0.5px 0;
@@ -383,15 +386,14 @@ iframe{
     
     .mainContact{
         width:70vw;
-        height:50vh;
+        height:70vh;
         margin:15px auto;
         background-color: grey;
         border: 3px solid black;
         border-radius: 5px;
     }
     .submit{
-        width:13vw;
-        background-color: blue;
+        width:20vw;
     }
 }
 
